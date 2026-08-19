@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medasani Tejo Ravi Ram — Builder Log</title>
+<meta name="description" content="Medasani Tejo Ravi Ram — CSE student, hackathon builder, and security enthusiast. Projects in industrial IoT, fraud detection, and campus tooling.">
+<meta property="og:title" content="Medasani Tejo Ravi Ram — Builder Log">
+<meta property="og:description" content="CSE student, hackathon builder, and security enthusiast.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B1E33" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F2F0E6" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://tejo123-hub.github.io/personal-profile/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230B1E33%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23D4A73D%22 font-family=%22monospace%22>T</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Blueprint grid backdrop -->
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">TM<span class="dot">.</span></a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about"><span class="idx">01</span>About</a>
+        <a href="#background"><span class="idx">02</span>Background</a>
+        <a href="#projects"><span class="idx">03</span>Builds</a>
+        <a href="#contrib"><span class="idx">04</span>Contributions</a>
+        <a href="#skills"><span class="idx">05</span>Stack</a>
+        <a href="#contact"><span class="idx">06</span>Contact</a>
+      </nav>
+      <div class="nav-controls">
+        <button class="cmdk-trigger" id="cmdkTrigger" aria-label="Open command palette">
+          <svg class="cmdk-trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>Jump to…</span><kbd id="cmdkShortcutLabel">Ctrl K</kbd>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ COMMAND PALETTE ============ -->
+<div class="cmdk-overlay" id="cmdkOverlay" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="cmdk-panel">
+    <input type="text" class="cmdk-input" id="cmdkInput" placeholder="Jump to a section, project, or link…" autocomplete="off">
+    <div class="cmdk-list" id="cmdkList"></div>
+  </div>
+</div>
+
+<!-- ============ HERO / TITLE BLOCK ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="terminal-line" id="bootLine" aria-hidden="true">
+      <span class="prompt">tejo@vrsec</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+      <span class="type-target" id="typeTarget"></span><span class="cursor">▌</span>
+    </div>
+
+    <h1 class="hero-title">
+      Medasani Tejo Ravi Ram
+    </h1>
+    <p class="hero-role">CSE Undergrad — Builder — Security Enthusiast</p>
+    <p class="hero-desc">
+      Second-year CSE student at Velagapudi Ramakrishna Siddhartha Engineering College
+      (VRSEC), Vijayawada. I ship things fast for hackathons — industrial IoT platforms,
+      fraud-detection engines, campus tools — and I'm working my way through ethical
+      hacking, one CTF at a time.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View builds<span class="arrow">→</span></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=medasanitejo@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener" class="btn btn-ghost">Get in touch</a>
+    </div>
+
+    <!-- Title block, like an engineering drawing stamp -->
+    <div class="title-block">
+      <div class="tb-row">
+        <span class="tb-label">Drawn by</span><span class="tb-value">Medasani Tejo Ravi Ram</span>
+        <span class="tb-label">Sheet</span><span class="tb-value">01 / 01</span>
+      </div>
+      <div class="tb-row">
+        <span class="tb-label">Discipline</span><span class="tb-value">Computer Science &amp; Engineering</span>
+        <span class="tb-label">Status</span><span class="tb-value status-live">● Active</span>
+      </div>
+      <div class="tb-row">
+        <span class="tb-label">Location</span><span class="tb-value">Vijayawada, AP, IN</span>
+        <span class="tb-label">Rev</span><span class="tb-value" id="revDate">—</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="eyebrow">// 01 — About</p>
+    <h2 class="section-title">Field notes</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a second-year B.Tech CSE student who'd rather build something than just read
+          about how it works. Most of my questions come down to one thing: how do I actually
+          ship this? That's taken me across web development (HTML/CSS/JS → React), backend
+          work in Node and Flask, cloud deployment on GCP, and applied AI/ML — with
+          cybersecurity as the thread that ties most of it together.
+        </p>
+        <p>
+          My work leans toward systems that watch, detect, or coordinate — fraud engines,
+          IoT intelligence layers, campus logistics — the kind of projects where the
+          interesting part is what happens when data starts moving in real time. Alongside
+          that, I'm building a structured path into offensive security — TryHackMe, Hack The
+          Box, PortSwigger labs — with an eye on OSCP down the line.
+        </p>
+        <p>
+          I learn best by going concept → simple explanation → example → code → execution,
+          then repeating that loop for the next thing. And I'm increasingly focused on
+          turning that into something concrete: real applications, real clients, work that
+          holds up outside a classroom — not just another finished tutorial.
+        </p>
+      </div>
+      <div class="about-specs">
+        <div class="spec-card reveal">
+          <span class="spec-num" id="statRepos">16</span>
+          <span class="spec-label">Public repos</span>
+        </div>
+        <div class="spec-card reveal">
+          <span class="spec-num" id="statBadges">4</span>
+          <span class="spec-label">GitHub badges earned</span>
+        </div>
+        <div class="spec-card reveal">
+          <span class="spec-num">3+</span>
+          <span class="spec-label">Hackathon builds shipped</span>
+        </div>
+        <div class="spec-card reveal">
+          <span class="spec-num">Y2</span>
+          <span class="spec-label">B.Tech, VRSEC Vijayawada</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BACKGROUND / EDUCATION ============ -->
+<section class="section section-alt" id="background">
+  <div class="section-inner">
+    <p class="eyebrow">// 02 — Background</p>
+    <h2 class="section-title">Education &amp; credentials</h2>
+    <p class="section-sub">Where I'm learning from — degree program, plus certifications picked up along the way.</p>
+
+    <div class="edu-grid">
+      <div class="edu-block reveal">
+        <h3 class="edu-heading">Education</h3>
+        <div class="edu-list">
+          <div class="edu-card">
+            <div class="edu-card-top">
+              <span class="edu-inst">Velagapudi Ramakrishna Siddhartha Engineering College</span>
+              <span class="edu-status">In progress</span>
+            </div>
+            <p class="edu-degree">B.Tech, Computer Science &amp; Engineering</p>
+            <p class="edu-meta">Vijayawada, Andhra Pradesh — 2nd year</p>
+            <div class="edu-actions">
+              <a class="edu-btn" href="https://www.google.com/maps/search/?api=1&query=Velagapudi+Ramakrishna+Siddhartha+Engineering+College+Vijayawada" target="_blank" rel="noopener">Location ↗</a>
+              <a class="edu-btn" href="https://www.vrsiddhartha.ac.in/" target="_blank" rel="noopener">Website ↗</a>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-top">
+              <a class="edu-inst" href="https://maps.app.goo.gl/WFiDeA3KqpnacNu97" target="_blank" rel="noopener">Narayana Junior College, Vadgevi Bhavan</a>
+            </div>
+            <p class="edu-degree">Intermediate</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-top">
+              <a class="edu-inst" href="https://share.google/S0keAVr6bzGJbjgUY" target="_blank" rel="noopener">Little Brains EM School</a>
+            </div>
+            <p class="edu-degree">10th Class</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-block reveal">
+        <h3 class="edu-heading">Certifications</h3>
+        <ul class="cert-list">
+          <li class="cert-item">
+            <span class="cert-name">Google Cloud Computing Foundations Certificate</span>
+            <span class="cert-issuer">Google Cloud</span>
+          </li>
+          <li class="cert-item">
+            <span class="cert-name">C Essentials 2</span>
+            <span class="cert-issuer">Cisco Networking Academy</span>
+          </li>
+          <li class="cert-item">
+            <span class="cert-name">Python Essentials 1</span>
+            <span class="cert-issuer">Cisco Networking Academy</span>
+          </li>
+          <li class="cert-item">
+            <span class="cert-name">AI for You: Training and Assessment</span>
+            <span class="cert-issuer">Oracle University</span>
+          </li>
+          <li class="cert-item">
+            <span class="cert-name">Data Structures using C</span>
+            <span class="cert-issuer">CodeTantra</span>
+          </li>
+          <li class="cert-item">
+            <span class="cert-name">Problem Solving with Python</span>
+            <span class="cert-issuer">CodeTantra</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS (own GitHub repos) ============ -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <p class="eyebrow">// 03 — Repository index</p>
+    <h2 class="section-title">Builds on GitHub</h2>
+    <p class="section-sub">Repositories I've authored — <a href="https://github.com/tejo123-HUB" target="_blank" rel="noopener">github.com/tejo123-HUB</a></p>
+
+    <div class="featured-panel reveal">
+      <div class="fp-head">
+        <span class="fp-eyebrow">Featured build</span>
+        <h3 class="fp-title">sentinelpay</h3>
+      </div>
+      <p class="fp-problem">
+        Micro-transactions move too fast for manual fraud review — sentinelpay is a real-time
+        detection layer built to catch suspicious patterns before a transaction settles.
+      </p>
+      <div class="fp-approach">
+        <div class="fp-row">
+          <span class="fp-label">Detection</span>
+          <span class="fp-value">Rule-based detectors flag known fraud signatures as transactions come in.</span>
+        </div>
+        <div class="fp-row">
+          <span class="fp-label">Graph engine</span>
+          <span class="fp-value">Maps transaction chains between accounts to surface money-laundering rings.</span>
+        </div>
+        <div class="fp-row">
+          <span class="fp-label">ML layer</span>
+          <span class="fp-value">A Vertex AI model scores anomalous transactions the rule engine alone would miss.</span>
+        </div>
+      </div>
+      <div class="fp-foot">
+        <div class="fp-tags">
+          <span class="tag-chip">Node.js</span>
+          <span class="tag-chip">Fraud Detection</span>
+          <span class="tag-chip">Vertex AI</span>
+          <span class="tag-chip">Graph Engine</span>
+        </div>
+        <a href="https://github.com/tejo123-HUB/sentinelpay" target="_blank" rel="noopener" class="fp-link">View repository →</a>
+      </div>
+    </div>
+
+    <div class="repo-controls">
+      <div class="repo-filters" id="repoFilters">
+        <!-- populated by script.js -->
+      </div>
+      <label class="repo-sort-wrap">
+        <span class="repo-sort-label">Sort</span>
+        <select class="repo-sort" id="repoSort">
+          <option value="default">Featured order</option>
+          <option value="newest">Newest</option>
+          <option value="stars">Most starred</option>
+          <option value="az">A–Z</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="repo-grid" id="repoGrid">
+      <!-- populated by script.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTRIBUTIONS (forks) ============ -->
+<section class="section section-alt" id="contrib">
+  <div class="section-inner">
+    <p class="eyebrow">// 04 — Upstream work</p>
+    <h2 class="section-title">Contributions</h2>
+    <p class="section-sub">Open-source projects I've contributed to — including a GSSoC 2026 contribution.</p>
+
+    <div class="contrib-list" id="contribList">
+      <!-- populated by script.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <p class="eyebrow">// 05 — Stack</p>
+    <h2 class="section-title">Toolchain</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <h3>Languages</h3>
+        <ul>
+          <li>C / C++</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>JavaScript / TypeScript</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Web &amp; Design</h3>
+        <ul>
+          <li>HTML / CSS → React</li>
+          <li>Node.js / Express, Flask</li>
+          <li>Figma / UI-UX basics</li>
+          <li>REST API design</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Cloud &amp; AI</h3>
+        <ul>
+          <li>Google Cloud Platform</li>
+          <li>Vertex AI</li>
+          <li>GenAI / RAG, pgvector</li>
+          <li>Applied ML &amp; computer vision</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Systems &amp; Security</h3>
+        <ul>
+          <li>Linux, Bash scripting</li>
+          <li>Git &amp; GitHub, open source</li>
+          <li>TryHackMe / HTB / PortSwigger</li>
+          <li>OSCP pathway (in progress)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <p class="eyebrow">// 06 — Contact</p>
+    <h2 class="section-title">Open a channel</h2>
+    <p class="section-sub">Building something, hiring for a hackathon team, or just want to talk security — reach out.</p>
+
+    <div class="contact-grid">
+      <a class="contact-card reveal" href="https://mail.google.com/mail/?view=cm&fs=1&to=medasanitejo@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener">
+        <span class="contact-label">Email <span class="contact-hint">(opens Gmail)</span></span>
+        <span class="contact-value">medasanitejo@gmail.com</span>
+      </a>
+      <a class="contact-card reveal" href="https://github.com/tejo123-HUB" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">@tejo123-HUB</span>
+      </a>
+      <a class="contact-card reveal" href="https://www.linkedin.com/in/tejo-medasani-a1b470373/" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">tejo-medasani</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <span>© <span id="year"></span> Medasani Tejo Ravi Ram</span>
+    <span class="footer-note">Built with HTML, CSS, JS — deployed on GitHub Pages</span>
+  </div>
+</footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+<script src="script.js"></script>
+</body>
+</html>

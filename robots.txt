@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tejo123-hub.github.io/personal-profile/sitemap.xml

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Not Found | Medasani Tejo Ravi Ram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .error-wrap{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    max-width:640px;
+    margin:0 auto;
+    padding:28px;
+  }
+  .error-code{
+    font-family:var(--font-display);
+    color:var(--accent);
+    font-size:14px;
+    margin-bottom:18px;
+  }
+  .error-title{
+    font-size:clamp(32px,6vw,52px);
+    margin-bottom:16px;
+  }
+</style>
+</head>
+<body>
+<div class="grid-backdrop" aria-hidden="true"></div>
+<div class="error-wrap">
+  <p class="error-code">// 404 — route not found</p>
+  <h1 class="error-title">This page isn't in the build.</h1>
+  <p class="hero-desc">The page you're looking for doesn't exist or has moved. Head back to the main site.</p>
+  <a href="/personal-profile/" class="btn btn-primary">Back to home<span class="arrow">→</span></a>
+</div>
+</body>
+</html>
