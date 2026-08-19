@@ -893,6 +893,9 @@ p{ margin:0 0 1em; color:var(--muted); }
 }
 
 @media (max-width: 720px){
+  .section{ padding:64px 0; }
+  .hero{ padding:64px 0 48px; }
+
   .nav-links{
     position:absolute;
     top:64px; left:0; right:0;
@@ -929,12 +932,29 @@ p{ margin:0 0 1em; color:var(--muted); }
   }
   .contrib-upstream{ text-align:left; }
 
-  .repo-controls{ flex-direction:column; align-items:flex-start; }
+  .repo-controls{ flex-direction:column; align-items:stretch; }
   .fp-row{ grid-template-columns:1fr; gap:2px; }
   .featured-panel{ padding:22px; }
+
+  /* Filter chips: scroll horizontally instead of wrapping into a tall
+     block — on a phone, 15 chips wrapped can push content 200px+ down. */
+  .repo-filters{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    margin:0 -28px;
+    padding:0 28px 4px;
+  }
+  .repo-filters::-webkit-scrollbar{ display:none; }
+  .filter-chip{ flex:0 0 auto; }
+  .repo-sort-wrap{ justify-content:space-between; }
 }
 
 @media (max-width: 520px){
+  .section{ padding:48px 0; }
+  .hero{ padding:48px 0 40px; }
   .skills-grid{ grid-template-columns:1fr; }
   .hero-actions{ flex-direction:column; align-items:stretch; }
   .tb-row{ grid-template-columns:1fr; gap:2px; }
